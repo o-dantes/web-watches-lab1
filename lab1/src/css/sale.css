@@ -1,0 +1,443 @@
+/* #region Sale */
+
+@media screen and (min-width: 768px) {
+  .sale-content {
+    max-width: 744px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-content {
+    max-width: 1190px;
+  }
+}
+
+.h1-sale {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .h1-sale {
+    font-size: 48px;
+    line-height: 0.92;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .h1-sale {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cont-all-content {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cont-image-galary-and-main-image {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cont-image-galary-and-main-image {
+    margin-bottom: 0;
+  }
+}
+
+.ul-sales {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ul-sales {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.image-sales-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  background-color: #f3f3f3;
+}
+
+@media screen and (min-width: 768px) {
+  .image-sales-li {
+    width: 132px;
+    height: 132px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.image-sales {
+  width: 52px;
+  height: 54px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-sales {
+    width: 96px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.image-sales-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  max-width: 335px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-sales-main {
+    max-width: 552px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .image-sales-main {
+    width: 428px;
+  }
+}
+
+.image-sales-main-picture {
+  width: 235px;
+  height: 285px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-sales-main-picture {
+    width: 328px;
+    height: 398px;
+    margin: 0 132px;
+  }
+}
+
+.info {
+  border-radius: 30px;
+  max-width: 335px;
+  background-color: #3350e9;
+  padding: 48px 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    border-radius: 50px;
+    max-width: 704px;
+
+    padding: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .info {
+    max-width: 530px;
+  }
+  .image-sales-main-picture {
+    margin: 0 auto;
+  }
+}
+
+.title-info-card {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+
+  max-width: 279px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-info-card {
+    font-size: 32px;
+    line-height: 1.12;
+    max-width: 440px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-info-card {
+    max-width: 389px;
+  }
+}
+
+.product-tag-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+
+  border-radius: 8px;
+  max-width: 68px;
+
+  background: rgba(251, 251, 251, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .price {
+    max-width: 78px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.current-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .current-price {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.past-price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.cont-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .cont-price {
+    margin-bottom: 30px;
+  }
+}
+
+.about-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 28px;
+  max-width: 268px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 584px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-text {
+    max-width: 401px;
+    margin-bottom: 40px;
+  }
+}
+
+.watch-tag-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-ul {
+    max-width: 398px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-fused {
+    max-width: 145px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li-grade {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 123px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-grade {
+    max-width: 139px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li-athlete {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 64px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-athlete {
+    max-width: 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li-golfer {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 58px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-golfer {
+    width: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li-commander {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 94px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-commander {
+    width: 105px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-li-adventurer {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 85px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-li-adventurer {
+    width: 95px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+.watch-tag-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .watch-tag-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+/* #endregion */
