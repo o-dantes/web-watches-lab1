@@ -1,64 +1,21 @@
-<section class="about-section" id="about">
-  <div class="container about-container">
-    <div class="about-block-text">
-      <h2 class="about-header">About Us</h2>
-      <ul class="about-list">
-        <li class="about-list-item">
-          <p class="about-paragraph">
-            Welcome to our premium watch collection, where luxury and style meet
-            functionality and precision. Our selection of timepieces embodies
-            the very best in Swiss craftsmanship and engineering, ensuring that
-            you'll always have a reliable and stylish accessory on your wrist.
-          </p>
-        </li>
-        <li class="about-list-item">
-          <p class="about-paragraph-first">
-            At our premium watch collection, we believe that a watch is more
-            than just a timekeeping device - it's a statement piece that
-            reflects your personality and style. So why settle for anything less
-            than the best?
-          </p>
-        </li>
-      </ul>
-      <div class="about-button-wrapper">
-        <a class="about-button" href="#catalog">View catalog</a>
-      </div>
-    </div>
-    <div class="about-block-image">
-      <picture>
-        <!-- Desktop screen -->
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            /img/about-us/aboutus1x.webp 1x,
-            /img/about-us/aboutus2x.webp 2x
-          "
-        />
-        <!-- Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            /img/about-us/aboutus1xtablet.webp 1x,
-            /img/about-us/aboutus2xtablet.webp 2x
-          "
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(min-width: 320px)"
-          srcset="
-            /img/about-us/aboutus1xmobile.webp 1x,
-            /img/about-us/aboutus2xmobile.webp 2x
-          "
-        />
-        <img
-          src="/img/about-us/aboutus1x.webp"
-          alt="watches"
-          class="about-image"
-          loading="lazy"
-          width="704"
-          height="512"
-        />
-      </picture>
-    </div>
+<?php
+// web-watches-lab1/src/partials/about-us.php
+
+// За бажанням: включаємо показ помилок PHP
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+
+require __DIR__ . '/header.php';
+?>
+
+<!-- Сюди вставте весь старий вміст about-us.html -->
+<section class="about-us">
+  <div class="container">
+    <h2>Про нас</h2>
+    <p>Тут була інформація про вашу компанію...</p>
+    <!-- … решта вашої розмітки … -->
   </div>
 </section>
+
+<?php
+require __DIR__ . '/footer.php';

@@ -1,81 +1,50 @@
-<header class="header">
-  <div class="container container-header">
-    <a class="header-logo" href="./index.html">watchcharm</a>
-    <nav class="header-nav">
-      <ul class="header-nav-pages-list">
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link current" href="./index.html#home"
-            >Home</a
-          >
-        </li>
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link" href="./index.html#about"
-            >About Us</a
-          >
-        </li>
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link" href="./index.html#catalog"
-            >Catalog</a
-          >
-        </li>
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link" href="./index.html#sale">Sale</a>
-        </li>
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link" href="./index.html#reviews"
-            >Reviews</a
-          >
-        </li>
-        <li class="header-nav-pages-item">
-          <a class="header-nav-pages-link" href="./index.html#contact-us"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </nav>
+<?php
+// web-watches-lab1/src/partials/header.php
+?>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій Гаджет-Бутік</title>
 
-    <div class="header-social-media">
-      <ul class="soc-net-list">
-        <li class="soc-net-item">
-          <a
-            class="soc-net-link"
-            href="https://www.facebook.com/goITclub/"
-            target="_blank"
-          >
-            <svg class="team-icon" width="20" height="20">
-              <use href="./img/header/header.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-net-item">
-          <a
-            class="soc-net-link"
-            href="https://www.instagram.com/goitclub/"
-            target="_blank"
-          >
-            <svg class="team-icon" width="20" height="20">
-              <use href="./img/header/header.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="soc-net-item">
-          <a
-            class="soc-net-link"
-            href="https://www.youtube.com/c/GoIT"
-            target="_blank"
-          >
-            <svg class="team-icon" width="20" height="20">
-              <use href="./img/header/header.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+  <!-- Підключаємо загальні CSS (припускаємо, що в css/ у Вас є base.css, header.css, footer.css, і кожен розділ має окремий CSS) -->
+  <link rel="stylesheet" href="/src/css/base.css" />
+  <link rel="stylesheet" href="/src/css/header.css" />
+  <link rel="stylesheet" href="/src/css/footer.css" />
+
+  <!-- Якщо потрібні специфічні css для окремих сторінок, вони підключаються вже у відповідних PHP. -->
+
+  <!-- Підключаємо JS (якщо є загальні скрипти) -->
+  <script defer src="/src/js/main.js"></script>
+</head>
+<body>
+  <!-- Верхній колонтитул/хедер з меню -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="/src/index.php">  
+          <!-- тут можна поставити логотип -->
+          <img src="/src/img/logo.png" alt="Логотип" />
+        </a>
+      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/src/index.php">Головна</a></li>
+          <li><a href="/src/partials/about-us.php">Про нас</a></li>
+          <li><a href="/src/partials/advertisement.php">Акції</a></li>
+          <li><a href="/src/partials/catalog.php">Каталог</a></li>
+          <li><a href="/src/partials/contact-us.php">Контакти</a></li>
+          <li><a href="/src/partials/reviews.php">Відгуки</a></li>
+          <li><a href="/src/partials/sale.php">Знижки</a></li>
+        </ul>
+      </nav>
+      <!-- Кнопка погортати кошик (відкриє модалку) -->
+      <div class="cart-icon-wrapper">
+        <button id="open-cart-button">Кошик</button>
+      </div>
     </div>
+  </header>
 
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg class="burger-icon">
-        <use href="./img/header/header.svg#icon-header-btn"></use>
-      </svg>
-    </button>
-  </div>
-</header>
+  <!-- Основна секція контенту стартує тут -->
+  <main class="site-main">

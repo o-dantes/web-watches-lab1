@@ -1,0 +1,11 @@
+{
+    "timestamp": "2025-06-05T19:56:44+00:00",
+    "cart": [
+        {
+            "id": 1,
+            "name": "Garmin Fenix 7X Pro Sapphire Solar",
+            "price": 500,
+            "quantity": 1
+        }
+    ]
+}

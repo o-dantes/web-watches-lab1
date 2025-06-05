@@ -1,95 +1,17 @@
-<section class="section-contacts-up section" id="contact-us">
-  <div class="container-contacts">
-    <h2 class="contacts-title">Contact Us</h2>
-    <div class="flex-container">
-      <form class="container-form">
-        <p class="text-form">
-          Please use the form below to contact us.<br />
-          Enter your name, email, phone, and message<br />
-          and we'll get back to you shortly.
-        </p>
-        <div class="container-for-all">
-          <div class="form-window">
-            <label for="user-name" class="visually-hidden">Name</label>
-            <input
-              type="text"
-              class="name-inp"
-              name="user-name"
-              id="user-name"
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div class="form-window">
-            <label for="email" class="visually-hidden">Email</label>
-            <input
-              type="email"
-              class="name-inp"
-              name="email"
-              id="email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="form-window">
-            <label for="phone" class="visually-hidden">Phone</label>
-            <input
-              type="tel"
-              class="name-inp"
-              name="phone"
-              id="phone"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              title="+380-XX-XXX-XX-XX"
-              placeholder="+380"
-              required
-            />
-          </div>
-          <div class="form-window lol">
-            <label for="user-comment" class="visually-hidden">Comment</label>
-            <textarea
-              class="comment-container"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Comment"
-              maxlength="100"
-            ></textarea>
-          </div>
-        </div>
-        <button class="send-form" type="submit">Send</button>
-      </form>
-      <div class="container-image">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              /img/contact-us/rectangle-desktop.webp    1x,
-              /img/contact-us/rectangle-desktop@2x.webp 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              /img/contact-us/rectangle-tablet.webp    1x,
-              /img/contact-us/rectangle-tablet@2x.webp 2x
-            "
-          />
-          <source
-            media="(max-width: 768px)"
-            srcset="
-              /img/contact-us/rectangle-mobile.webp    1x,
-              /img/contact-us/rectangle-mobile@2x.webp 2x
-            "
-          />
-          <img
-            src="/img/contact-us/rectangle-tablet.webp"
-            alt="rectangle"
-            class="rectangle-img"
-            width="704"
-            height="556"
-          />
-        </picture>
-      </div>
-    </div>
+<?php
+// web-watches-lab1/src/partials/contact-us.php
+require __DIR__ . '/header.php';
+?>
+
+<section class="contact-us">
+  <div class="container">
+    <h2>Контакти</h2>
+    <p>Телефон: +380 XX XXX XX XX</p>
+    <p>Електронна пошта: info@myshop.ua</p>
+    <p>Адреса: вул. Прикладна, 10, м. Київ, Україна</p>
+    <!-- Решта вашої контактної інформації -->
   </div>
 </section>
+
+<?php
+require __DIR__ . '/footer.php';

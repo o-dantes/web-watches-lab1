@@ -1,34 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Watch Spot</title>
-    <!-- Normalizer -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="#" />
+<?php
+// web-watches-lab1/src/index.php
 
-    <main>
-      <!-- Loads the specified .html file -->
+// Тимчасово можна увімкнути (або прибрати) помилки:
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
-      <load src="./partials/hero.html" />
-      <load src="./partials/about-us.html" />
-      <load src="./partials/catalog.html" />
-      <load src="./partials/advertisement.html" />
-      <load src="./partials/sale.html" />
-      <load src="./partials/reviews.html" />
-      <load src="./partials/contact-us.html" />
-    </main>
-    <load src="./partials/mobile.html" />
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
-  </body>
-</html>
+require __DIR__ . '/partials/header.php';
+?>
+  <!-- Тут може бути ваш Hero-блок або інший вміст головної сторінки -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Ласкаво просимо до Мого Гаджет-Бутика</h1>
+      <p>Найкращі годинники та аксесуари для вас!</p>
+      <a href="/src/partials/catalog.php" class="btn btn-primary">Перейти до каталогу</a>
+    </div>
+  </section>
+<?php
+require __DIR__ . '/partials/footer.php';
