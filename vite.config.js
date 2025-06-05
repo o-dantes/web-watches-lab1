@@ -4,6 +4,9 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
+// Import the Vue plugin
+import vue from '@vitejs/plugin-vue';
+
 export default defineConfig(({ command }) => {
   return {
     define: {
@@ -38,6 +41,7 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
+      vue(),          // <-- Add this line to handle .vue files
       injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
@@ -46,3 +50,4 @@ export default defineConfig(({ command }) => {
     ],
   };
 });
+
